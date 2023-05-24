@@ -15,7 +15,7 @@ const start = () => {
     .then(() => {
       app.listen(process.env.PORT, () => {
         console.log(
-          'Connection established, and the server is listening to port 3000'
+          `Connection established, and the server is listening to port ${process.env.PORT}`
         );
       });
     })
