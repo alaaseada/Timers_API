@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const TimerSchema = new mongoose.Schema({
-  id: {
+  _id: {
     type: mongoose.SchemaTypes.ObjectId,
   },
   title: {
