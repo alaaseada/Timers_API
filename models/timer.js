@@ -1,8 +1,11 @@
 const mongoose = require('mongoose');
+const uuid = require('uuid');
 
 const TimerSchema = new mongoose.Schema({
   _id: {
-    type: mongoose.SchemaTypes.ObjectId,
+    type: mongoose.SchemaTypes.String,
+    required: [true, 'The id is required'],
+    default: uuid.v4(),
   },
   title: {
     type: mongoose.SchemaTypes.String,
